@@ -1,10 +1,10 @@
 import React from 'react'
 import MacWindow from './MacWindow'
 
-const Spotify = () => {
+const Spotify = ({windowName, setWindowsState}) => {
   return (
 
-    <MacWindow width='25vw'>
+    <MacWindow width='25vw' windowName={windowName} setWindowsState={setWindowsState}>
 
         <div className="spotify-window">
 

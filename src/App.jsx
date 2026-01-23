@@ -9,17 +9,24 @@ import Resume from "./components/windows/Resume"
 import Spotify from "./components/windows/Spotify"
 import Cli from "./components/windows/Cli"
 function App() {
-  
+
+  const [windowsState, setWindowsState] = useState({
+    github: false,
+    note: false,
+    resume: false,
+    spotify: false,
+    cli: false
+  })
 
   return (
    <main>
-    <Nav></Nav>
-    <Dock></Dock>
-    <Github></Github>
-    <Note></Note>
-    <Resume></Resume>
-    <Spotify></Spotify>
-    <Cli></Cli>
+    <Nav/>
+    <Dock windowsState={windowsState} setWindowsState={setWindowsState}/>
+    {windowsState.github && <Github windowName="github"  setWindowsState={setWindowsState} />}
+    {windowsState.note && <Note windowName="note"  setWindowsState={setWindowsState} />}
+    {windowsState.resume && <Resume windowName="resume"  setWindowsState={setWindowsState} />}
+    {windowsState.spotify && <Spotify windowName="spotify"  setWindowsState={setWindowsState} />}
+    {windowsState.cli && <Cli windowName="cli"  setWindowsState={setWindowsState} />}
    </main>
   )
 }
