@@ -10,19 +10,51 @@ const Cli = ({windowName, setWindowsState}) => {
       description: 'Learn about me',
       usage: 'about',
       fn: () => `
-Hi! I'm Aditya Rai, a Full Stack Developer passionate about creating amazing web experiences.
-I specialize in MERN stack development and modern web technologies.
+Hi! I'm Aditay Kumar, a B.Tech (IT) student at NIT Srinagar (2027).
+
+I have strong analytical thinking and hands-on development experience.
+Solved 300+ Data Structures & Algorithms problems, demonstrating solid
+problem-solving skills.
+
+I am proficient in MERN stack development, API integration, and building
+scalable web applications and Chrome Extensions.
+
+Currently seeking opportunities to create efficient and impactful
+software solutions.
       `
     },
     skills: {
-      description: 'View my technical skills',
+      description: 'View my technical and soft skills',
       usage: 'skills',
       fn: () => `
-Technical Skills:
-  Frontend:     React.js, HTML5, CSS3, SCSS, JavaScript
-  Backend:      Node.js, Express.js, MongoDB
-  Tools:        Git, VS Code, npm, Webpack, Vite
-  Other:        REST APIs, Responsive Design, Web Performance
+SKILLS
+
+Programming Languages:
+  C++, C, JavaScript
+
+Databases:
+  SQL
+
+Frameworks & Libraries:
+  React.js, GSAP, Tailwind CSS
+
+Backend Technologies:
+  Node.js, Express.js, MongoDB
+
+Core CS Fundamentals:
+  OOPs, DBMS, DSA, Software Engineering, Operating Systems
+
+Tools & Technologies:
+  Azure Fundamentals (Basics)
+  Git, GitHub
+  VS Code, Code Blocks, IntelliJ IDEA
+  Jupyter Notebook
+  Prompt Engineering
+
+Soft Skills:
+  Leadership, Communication
+  Critical Thinking, Problem Solving
+  Teamwork, Time Management
       `
     },
     projects: {
@@ -30,10 +62,29 @@ Technical Skills:
       usage: 'projects',
       fn: () => `
 Recent Projects:
-  1. Portfolio Website   - MERN Stack | Live Demo Available
-  2. E-commerce App      - React + Node.js | MongoDB Database
-  3. Task Manager        - React with Redux | Real-time Updates
-  4. Chat Application    - Socket.io + Express | Multi-user Support
+  PROJECTS
+
+1. KR.AI – Autonomous Meeting Intelligence Agent
+   • AI-powered assistant for structured meeting insights
+   • Cognitive summarization & task extraction using GenAI & LLMs
+   • Chrome Extension for live Zoom call interception
+   • RAG-based contextual memory across meetings
+   • Multi-format input (.mp3, .txt) with email sharing
+   • Role: Team Lead, Backend, Chrome Extension, Zoom API
+
+2. Uber Clone – MERN Stack Ride-Hailing Platform
+   • Full-stack Uber-like application
+   • JWT & bcrypt-based authentication
+   • Role-based access control (users & captains)
+   • REST APIs with MongoDB & Mongoose
+   • Token blacklisting & protected routes
+
+3. macOS-Inspired Interactive Portfolio Website
+   • macOS-style desktop UI experience
+   • Dock, navbar, and window system
+   • Draggable & resizable React windows
+   • Apps: Resume Viewer, GitHub Browser, Notes, Terminal (CLI)
+   • Role: Frontend Dev, UI/UX Design, React Architecture
       `
     },
     contact: {
@@ -41,11 +92,11 @@ Recent Projects:
       usage: 'contact',
       fn: () => `
 Contact Information:
-  Email:        aditayrai@email.com
-  Phone:        +91 XXXXXXXXXX
-  GitHub:       github.com/aditayrai
-  LinkedIn:     linkedin.com/in/aditayrai
-  Twitter:      @aditayrai
+  Email:        aditayatwork@gmail.com
+  Phone:        +91 8195937740
+  GitHub:       https://github.com/adiwillhit/
+  LinkedIn:     https://www.linkedin.com/in/aditay-kumar-rai/
+  
       `
     },
     resume: {

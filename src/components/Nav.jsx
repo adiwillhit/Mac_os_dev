@@ -12,7 +12,7 @@ const Nav = () => {
             </div>
 
             <div className="nav-item">
-                <p>Aditay Rai</p>
+                <p>Aditay Kumar</p>
             </div>
             <div className="nav-item">
                 <p>File</p>

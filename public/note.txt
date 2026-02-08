@@ -1,105 +1,204 @@
 /**
  * @file: profile.config.ts
  * @author: Engineering Portfolio
- * @summary: A high-performance full-stack engineer.
+ * @summary: B.Tech (IT) student & MERN Stack Developer.
  */
 
 // --------------------------------------------------
-// 1. CORE DEPENDENCIES & SKILLS
+// 1. OBJECTIVE
+// --------------------------------------------------
+
+const OBJECTIVE = `
+B.Tech (IT) student at NIT Srinagar (2027) with strong analytical thinking
+and hands-on development experience. Solved 300+ DSA problems demonstrating
+solid problem-solving skills. Proficient in MERN stack development, API
+integration, and Chrome extension development. Seeking opportunities to
+build scalable, efficient, and impactful software solutions.
+`;
+
+// --------------------------------------------------
+// 2. CORE SKILLS & TECH STACK
 // --------------------------------------------------
 
 const TECH_STACK = {
+  programmingLanguages: ["C++", "C", "JavaScript"],
+
   frontend: [
-    "React.js",    // 100%
-    "Next.js",     // 95%
-    "TailwindCSS", // 90%
-    "Three.js",    // 70%
+    "React.js",
+    "Tailwind CSS",
+    "GSAP",
   ],
+
   backend: [
-    "Node.js",     // 90%
-    "PostgreSQL",  // 85%
-    "Redis",       // 75%
-    "Docker",      // 80%
+    "Node.js",
+    "Express.js",
+    "MongoDB",
   ],
-  tools: ["AWS", "Git", "Figma", "Linux"]
+
+  databases: ["SQL"],
+
+  coreCS: [
+    "Data Structures & Algorithms",
+    "Object-Oriented Programming",
+    "DBMS",
+    "Operating Systems",
+    "Software Engineering",
+  ],
+
+  toolsAndTechnologies: [
+    "Git",
+    "GitHub",
+    "VS Code",
+    "IntelliJ IDEA",
+    "Code::Blocks",
+    "Jupyter Notebook",
+    "Azure Fundamentals (Basics)",
+    "Prompt Engineering",
+  ],
+
+  softSkills: [
+    "Leadership",
+    "Communication",
+    "Critical Thinking",
+    "Problem Solving",
+    "Teamwork",
+    "Time Management",
+  ],
 };
 
 // --------------------------------------------------
-// 2. EXPERIENCE LOG (Reverse Chronological)
+// 3. EXPERIENCE
 // --------------------------------------------------
 
 class ProfessionalHistory {
-  
-  /** * CURRENT ROLE
-   * @period 2023 - Present 
-   */
-  public async TechFlow_Systems(): Promise<Impact> {
-    const role = "Senior Full-Stack Engineer";
-    
-    // Key Achievements
-    const optimized = await api.optimize({ strategy: "Redis Caching" });
-    const latencyReduction = "40%";
-    
-    const leadership = this.mentor(["Jr. Dev 1", "Jr. Dev 2", "Jr. Dev 3"]);
-    const architecture = "Monolith -> Microservices Migration";
-    
-    return { role, optimized, architecture, leadership };
-  }
 
-  /** * PREVIOUS ROLE
-   * @period 2021 - 2023
+  /**
+   * @event Hackathon Experience
+   * @date July 2025
+   * @location Bengaluru, Karnataka
    */
-  public PixelPerfect_Studios(): void {
-    this.role = "Frontend Developer";
-    this.focus = "High-Fidelity Animations";
-    
-    // Implemented GSAP scroll-triggers for 15+ clients
-    // Improved Lighthouse Performance Scores: 65 -> 98
+  public Unstop_Flipr_Generative_AI_Hackathon(): HackathonImpact {
+    const role = "Team Lead";
+    const achievement = "All India Rank 1 (Platinum)";
+    const participants = "64+ Teams Nationwide";
+
+    return { role, achievement, participants };
   }
 }
 
 // --------------------------------------------------
-// 3. COMPETITIVE ACHIEVEMENTS
+// 4. PROJECTS
 // --------------------------------------------------
 
-interface HackathonWin {
-  rank: number;
-  event: string;
-  project: string;
+interface Project {
+  name: string;
+  description: string[];
+  techStack: string[];
+  role: string;
 }
 
-const trophyCabinet: HackathonWin[] = [
+const PROJECTS: Project[] = [
+
   {
-    rank: 1,
-    event: "Global AI Hackathon 2024",
-    project: "EcoVision (Computer Vision Waste Segregation)",
-    // Prize: $5,000
+    name: "KR.AI – Autonomous Meeting Intelligence Agent",
+    description: [
+      "Built an AI-powered assistant to convert unstructured meeting conversations into structured insights.",
+      "Implemented cognitive summarization, task extraction, and context-aware decision making using LLMs.",
+      "Developed a Chrome Extension to intercept live Zoom calls and process data in real-time.",
+      "Integrated RAG-based contextual memory across meetings.",
+      "Enabled multi-format inputs (.mp3, .txt) and one-click email sharing.",
+    ],
+    techStack: [
+      "Node.js",
+      "Express.js",
+      "OpenAI APIs",
+      "Chrome Extension APIs",
+      "Zoom API",
+    ],
+    role: "Team Lead, Backend Integration, Chrome Extension, Zoom API, Git & GitHub",
   },
+
   {
-    rank: 500, // Top 500 Global
-    event: "Google Code Jam 2023",
-    project: "Algorithm Optimization (Dynamic Programming)",
-  }
+    name: "Uber Clone Application – MERN Stack Ride-Hailing Platform",
+    description: [
+      "Developed a full-stack Uber-like ride-hailing platform using the MERN stack.",
+      "Implemented JWT-based authentication, bcrypt password hashing, and role-based access control.",
+      "Designed RESTful APIs and MongoDB schemas using Mongoose.",
+      "Implemented protected routes, token blacklisting, and environment-based configurations.",
+      "Used Postman for API testing and followed production-level best practices.",
+    ],
+    techStack: [
+      "MongoDB",
+      "Express.js",
+      "React.js",
+      "Node.js",
+    ],
+    role: "Full-Stack Developer",
+  },
+
+  {
+    name: "macOS-Inspired Interactive Portfolio Website",
+    description: [
+      "Designed a macOS-style interactive portfolio with a desktop-like UI.",
+      "Implemented dock, navigation bar, and window-based system.",
+      "Built draggable and resizable windows using React.",
+      "Developed apps such as Resume Viewer, GitHub Browser, Notes, and Terminal (CLI).",
+    ],
+    techStack: [
+      "React.js",
+      "Tailwind CSS",
+      "JavaScript",
+    ],
+    role: "Frontend Development, UI/UX Design, React Architecture",
+  },
 ];
 
 // --------------------------------------------------
-// 4. ACADEMIC BACKGROUND
+// 5. EDUCATION
 // --------------------------------------------------
 
-const education = new Map<string, string>([
-  ["Stanford University", "MS Computer Science (3.9 GPA)"],
-  ["MIT World Peace Univ", "B.Tech Information Tech (8.8 CGPA)"]
-]);
+const EDUCATION = [
+  {
+    institute: "National Institute of Technology, Srinagar",
+    degree: "Bachelor of Technology",
+    specialization: "Information Technology",
+    graduationYear: 2027,
+    cgpa: "7.31",
+  },
+  {
+    institute: "Army Public School, Janglot",
+    level: "Intermediate",
+    year: 2022,
+    percentage: "85.8%",
+  },
+  {
+    institute: "Army Public School, Suratgarh",
+    level: "High School",
+    year: 2020,
+    percentage: "87.6%",
+  },
+];
 
-export default new ProfessionalHistory();
+// --------------------------------------------------
+// 6. EXTRA-CURRICULAR ACTIVITIES
+// --------------------------------------------------
 
+const EXTRA_CURRICULAR = [
+  {
+    organization: "TEDx NIT Srinagar",
+    role: "Graphic Designer",
+  },
+];
 
-```bash
-# TERMINAL OUTPUT
-# ---------------------------------------
-$ user --status
-> Status: Open to Opportunities
-> Location: Global / Remote
-> Loading Assets... [||||||||||] 100%
-> Ready.
-```
+// --------------------------------------------------
+// 7. EXPORT PROFILE
+// --------------------------------------------------
+
+export default {
+  OBJECTIVE,
+  TECH_STACK,
+  PROJECTS,
+  EDUCATION,
+  EXTRA_CURRICULAR,
+  ProfessionalHistory: new ProfessionalHistory(),
+};
